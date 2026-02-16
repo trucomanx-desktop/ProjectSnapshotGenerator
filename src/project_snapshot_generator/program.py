@@ -22,6 +22,11 @@ from project_snapshot_generator.modules.project_report import (
     generate_tree,
     serialize_project
 )
+from project_snapshot_generator.desktop import (
+    create_desktop_file,
+    create_desktop_directory,
+    create_desktop_menu
+)
 
 # ---------- Path to config file ----------
 CONFIG_PATH = os.path.join(
@@ -395,7 +400,7 @@ class MainWindow(QMainWindow):
 def main():
     signal.signal(signal.SIGINT, signal.SIG_DFL)
 
-    '''
+    
     create_desktop_directory()    
     create_desktop_menu()
     create_desktop_file(os.path.join("~",".local","share","applications"), 
@@ -416,7 +421,7 @@ def main():
                                 overwrite=True, 
                                 program_name=about.__program_name__)
             return
-    '''
+    
 
     app = QApplication(sys.argv)
     app.setApplicationName(about.__package__)
