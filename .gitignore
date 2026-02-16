@@ -1,2 +1,4 @@
 /src/project_snapshot_generator/__pycache__/
 /src/project_snapshot_generator/modules/__pycache__/
+/src/dist/
+/src/project_snapshot_generator.egg-info/
