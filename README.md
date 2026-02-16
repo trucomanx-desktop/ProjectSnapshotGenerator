@@ -1,0 +1,2 @@
+# ProjectSnapshotGenerator
+Project Snapshot Generator
