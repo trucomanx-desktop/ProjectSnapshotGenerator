@@ -21,6 +21,7 @@ To start, use the command below:
 
 ```bash
 project-snapshot-generator
+file-snapshot-generator
 ```
 ## 2. More information
 
