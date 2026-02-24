@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "project_snapshot_generator"
-version = "0.1.0"
+version = "0.1.1"
 description = "Generates a complete textual snapshot of a project's source code and directory structure for LLM consumption."
 readme = "README.md"
 authors = [{name = "Fernando Pujaico Rivera", email = "fernando.pujaico.rivera@gmail.com"}]
@@ -28,7 +28,8 @@ dependencies = [
 "Source" = "https://github.com/trucomanx/ProjectSnapshotGenerator"
 
 [project.scripts]
-"project-snapshot-generator" = "project_snapshot_generator.program:main"
+"project-snapshot-generator" = "project_snapshot_generator.program_project:main"
+"file-snapshot-generator" = "project_snapshot_generator.program_file:main"
 
 [tool.setuptools]
 packages = ["project_snapshot_generator", "project_snapshot_generator.modules"]

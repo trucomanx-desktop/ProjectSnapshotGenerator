@@ -4,5 +4,5 @@ Generates a complete textual snapshot of a project's source code and directory s
 
 # Configure
 
-Go to `Configure` to open the `~/config/project_snapshot_generator/config.json` file. 
+Go to `Configure` to open the `~/config/project_snapshot_generator/config.project.json` file. 
 

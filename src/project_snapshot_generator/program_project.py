@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os
 import sys
 import signal
@@ -33,7 +35,7 @@ CONFIG_PATH = os.path.join(
     os.path.expanduser("~"),
     ".config",
     about.__package__,
-    "config.json"
+    "config.project.json"
 )
 
 DEFAULT_CONTENT = {
@@ -92,7 +94,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle(about.__program_name__)
+        self.setWindowTitle(about.__program_project_name__)
         self.resize(CONFIG["window_width"], CONFIG["window_height"])
 
         self.icon_path = resource_path("icons", "logo.png")
@@ -382,7 +384,7 @@ class MainWindow(QMainWindow):
         data = {
             "version": about.__version__,
             "package": about.__package__,
-            "program_name": about.__program_name__,
+            "program_name": about.__program_project_name__,
             "author": about.__author__,
             "email": about.__email__,
             "description": about.__description__,
@@ -404,7 +406,7 @@ def main():
     create_desktop_directory()    
     create_desktop_menu()
     create_desktop_file(os.path.join("~",".local","share","applications"), 
-                        program_name=about.__program_name__)
+                        program_name=about.__program_project_name__)
     
     for n in range(len(sys.argv)):
         if sys.argv[n] == "--autostart":
@@ -412,19 +414,19 @@ def main():
             create_desktop_menu(overwrite = True)
             create_desktop_file(os.path.join("~",".config","autostart"), 
                                 overwrite=True, 
-                                program_name=about.__program_name__)
+                                program_name=about.__program_project_name__)
             return
         if sys.argv[n] == "--applications":
             create_desktop_directory(overwrite = True)
             create_desktop_menu(overwrite = True)
             create_desktop_file(os.path.join("~",".local","share","applications"), 
                                 overwrite=True, 
-                                program_name=about.__program_name__)
+                                program_name=about.__program_project_name__)
             return
     
 
     app = QApplication(sys.argv)
-    app.setApplicationName(about.__package__)
+    app.setApplicationName(about.__program_project_name__)
 
     # Estilo global da aplicação
     app.setStyle('Fusion')

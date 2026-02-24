@@ -25,7 +25,7 @@ python -m PyInstaller --onefile --windowed --name project_snapshot_generator --a
 
 '''
 
-from project_snapshot_generator.program import main
+from project_snapshot_generator.program_project import main
 
 if __name__ == "__main__":
     main()
