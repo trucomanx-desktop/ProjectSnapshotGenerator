@@ -190,8 +190,9 @@ class SnapshotMainWindow(QMainWindow):
         self.toolbar_spacer.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
         self.toolbar.addWidget(self.toolbar_spacer)
 
+        configure_path = resource_path("icons", "text-configure.png")
         self.configure_action = QAction(
-            QIcon.fromTheme("document-properties"),
+            QIcon(configure_path),
             CONFIG["toolbar_configure"],
             self
         )
@@ -199,8 +200,9 @@ class SnapshotMainWindow(QMainWindow):
         self.configure_action.triggered.connect(self.open_configure_editor)
         self.toolbar.addAction(self.configure_action)
 
+        about_path = resource_path("icons", "status_help.png")
         self.about_action = QAction(
-            QIcon.fromTheme("help-about"),
+            QIcon(about_path),
             CONFIG["toolbar_about"],
             self
         )
@@ -208,8 +210,9 @@ class SnapshotMainWindow(QMainWindow):
         self.about_action.triggered.connect(self.open_about)
         self.toolbar.addAction(self.about_action)
 
+        coffee_path = resource_path("icons", "emote-love.png")
         self.coffee_action = QAction(
-            QIcon.fromTheme("emblem-favorite"),
+            QIcon(coffee_path),
             CONFIG["toolbar_coffee"],
             self
         )

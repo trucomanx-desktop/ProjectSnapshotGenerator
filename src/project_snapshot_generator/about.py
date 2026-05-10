@@ -1,6 +1,6 @@
 # about.py
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 __package__ = "project_snapshot_generator"
 __program_project_name__ = "project-snapshot-generator"
 __program_file_name__ = "file-snapshot-generator"

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "project_snapshot_generator"
-version = "0.1.1"
+version = "0.1.2"
 description = "Generates a complete textual snapshot of a project's source code and directory structure for LLM consumption."
 readme = "README.md"
 authors = [{name = "Fernando Pujaico Rivera", email = "fernando.pujaico.rivera@gmail.com"}]
@@ -35,4 +35,4 @@ dependencies = [
 packages = ["project_snapshot_generator", "project_snapshot_generator.modules"]
 
 [tool.setuptools.package-data]
-"project_snapshot_generator" = ["icons/logo.png"]
+"project_snapshot_generator" = ["icons/*.png"]
