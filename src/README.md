@@ -2,7 +2,7 @@
 
 Generates a complete textual snapshot of a project's source code and directory structure for LLM consumption.
 
-![logo](https://raw.githubusercontent.com/trucomanx/ProjectSnapshotGenerator/main/screenshot.png)
+![logo](https://raw.githubusercontent.com/trucomanx-desktop/ProjectSnapshotGenerator/main/screenshot.png)
 
 ## 1. Installing
 
@@ -25,7 +25,7 @@ file-snapshot-generator
 ```
 ## 2. More information
 
-If you want more information go to [doc](https://github.com/trucomanx/ProjectSnapshotGenerator/blob/main/doc) directory.
+If you want more information go to [doc](https://github.com/trucomanx-desktop/ProjectSnapshotGenerator/blob/main/doc) directory.
 
 ## 3. Buy me a coffee
 

@@ -21,7 +21,7 @@ project-snapshot-generator
 Installing `project-snapshot-generator` program
 
 ```bash
-git clone https://github.com/trucomanx/ProjectSnapshotGenerator.git
+git clone https://github.com/trucomanx-desktop/ProjectSnapshotGenerator.git
 cd ProjectSnapshotGenerator
 pip install -r requirements.txt
 cd src
